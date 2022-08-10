@@ -199,9 +199,10 @@
 
 .container-contents{
     width: 500px;
-    height: 1000px;
+    /* height: 1000px; */
 }
 
+/* nav bar */
 .main__center-navbar{
     display: flex;
     padding: 0px 8px 0px 8px;

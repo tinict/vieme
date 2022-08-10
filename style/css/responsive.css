@@ -17,6 +17,22 @@
     }
     .main, .main__center-mobile{
         display: block;
+        width: 100%;
+    }
+    .main__center-mobile {
+        width: 100%;
+    }
+    /* .itemBox-post{
+        display: none;
+    }
+    .post-blog {
+        display: none;
+    }
+    .main__center-navbar {
+        display: none;
+    } */
+    .container-contents{
+        width: 100%;
     }
 }
 
