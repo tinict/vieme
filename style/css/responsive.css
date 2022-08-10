@@ -62,9 +62,35 @@
 
     .btn-app .post-item a{
         display: block;
+        color: #1c7ed6;
     }
+
     .btn-app .post-item a h6 {
         margin: 0;
+        color: #1c7ed6;
+    }
+
+    .navbar-underliner-mobile {
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 8px;
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    }
+
+    .nav-mobile__container {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .nav-mobile__container .item-mobile {
+        font-size: 20px;
+    }
+
+    .nav-mobile__container .item-mobile a {
+        color: #1c7ed6;
     }
 }
 
