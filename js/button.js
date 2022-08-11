@@ -13,3 +13,13 @@ btnFaGridElement.onclick = function() {
     }
 }
 
+var btnPlusElement = document.querySelector('.item-mobile .fa-circle-plus');
+console.log(btnPlusElement);
+var showSubMenu = document.querySelector('.sub-menu-plus');
+console.log(showSubMenu);
+
+btnPlusElement.onclick = function() {
+    console.log("Hello");
+    showSubMenu.classList.toggle('show-sub-menu');
+}
+

@@ -3,3 +3,7 @@
 .titleHint {
     display: none;
 }
+
+.show-sub-menu {
+    display: block !important;
+}

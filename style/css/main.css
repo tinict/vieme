@@ -221,7 +221,7 @@
 .main__center-navbar{
     display: flex;
     padding: 0px 8px 0px 8px;
-    margin-top: 16px;
+    /* margin-top: 16px; */
     height: 56px;
     background-color: var(--bgr-navbar-center);
     justify-content: space-around;
@@ -440,3 +440,76 @@
     color: #1dbfaf;
 }
 
+.nav-mobile__container .item-mobile:nth-child(3) i{
+    position: relative;
+}
+
+.nav-mobile__container .item-mobile  .sub-menu-plus {
+    display: none;
+}
+
+.nav-mobile__container .item-mobile  .sub-menu-plus li {
+    position: absolute;
+    display: block;
+    bottom: 56px;
+    background-color: #f0f1f3;
+    padding: 5px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.nav-mobile__container .item-mobile:nth-child(3) i {
+    color: #1c7ed6;
+}
+
+.nav-mobile__container .item-mobile:nth-child(3) .sub-menu-plus li i{
+    font-size: 22px;
+}
+
+.nav-mobile__container .item-mobile  .sub-menu-plus li:first-child {
+    transform: rotate(0) translateX(-100px);
+}
+
+.nav-mobile__container .item-mobile  .sub-menu-plus li:nth-child(2) {
+    transform: rotate(36deg) translateX(-100px);
+}
+
+.nav-mobile__container .item-mobile  .sub-menu-plus li:nth-child(3) {
+    transform: rotate(72deg) translateX(-100px);
+}
+
+.nav-mobile__container .item-mobile  .sub-menu-plus li:nth-child(4) {
+    transform: rotate(108deg) translateX(-100px);
+}
+
+.nav-mobile__container .item-mobile  .sub-menu-plus li:nth-child(5) {
+    transform: rotate(144deg) translateX(-100px);
+}
+
+.nav-mobile__container .item-mobile  .sub-menu-plus li:nth-child(6) {
+    transform: rotate(180deg) translateX(-100px);
+}
+
+.nav-mobile__container .item-mobile  .sub-menu-plus li:first-child i {
+    transform: rotate(0);
+}
+
+.nav-mobile__container .item-mobile  .sub-menu-plus li:nth-child(2) i {
+    transform: rotate(-35deg);
+}
+
+.nav-mobile__container .item-mobile  .sub-menu-plus li:nth-child(3) i {
+    transform: rotate(197deg);
+}
+
+.nav-mobile__container .item-mobile  .sub-menu-plus li:nth-child(4) i {
+    transform: rotate(253deg);
+}
+
+.nav-mobile__container .item-mobile  .sub-menu-plus li:nth-child(5) i {
+    transform: rotate(217deg);
+}
+
+.nav-mobile__container .item-mobile  .sub-menu-plus li:nth-child(6) i {
+    transform: rotate(180deg);
+}
