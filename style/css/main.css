@@ -310,6 +310,7 @@
 
 .btn-app .post-item{
     border-radius: 15px;
+    text-align: center;
 }
 
 .btn-app .post-item a{
@@ -317,15 +318,13 @@
     display: flex;
     padding: 5px;
     justify-content: space-between;
-    border: 1px solid #dbdbdb;
     border-radius: 8px;
     text-align: center;
 }
 
-.btn-app .post-item a h6{
-    text-align: center;
-    font-size: 14px;
-    margin-left: 5px;
+.btn-app .post-item h6{
+    font-size: 10px;
+    margin-top: 4px;
     color: var(--font-color);
 }
 

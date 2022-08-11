@@ -56,7 +56,7 @@
     .btn-post h5 {
         display: block;
         line-height: 40px;
-        font-size: 16px;
+        font-size: 14px;
         color: #65676B;
     }
 
@@ -89,8 +89,27 @@
         font-size: 20px;
     }
 
+    .nav-mobile__container .item-mobile:nth-child(3) {
+        font-size: 36px;
+    }
+
+    .nav-mobile__container .item-mobile h6 {
+        font-size: 12px;
+        color: #65676B;
+    }
+
     .nav-mobile__container .item-mobile a {
         color: #1c7ed6;
+    }
+
+    .post-item a .around {
+        background-color: #f0f1f3;
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+    .post-item a h6 {
+        display: none;
     }
 }
 
