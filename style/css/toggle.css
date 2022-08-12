@@ -7,3 +7,11 @@
 .show-sub-menu {
     display: block !important;
 }
+
+.title-show {
+    display: block !important;
+}
+
+.line-hight {
+    line-height: 37.82px;
+}

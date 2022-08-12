@@ -458,7 +458,7 @@
     text-align: center;
 }
 
-.nav-mobile__container .item-mobile:nth-child(3) i {
+.nav-mobile__container i {
     color: #1c7ed6;
 }
 
@@ -512,4 +512,8 @@
 
 .nav-mobile__container .item-mobile  .sub-menu-plus li:nth-child(6) i {
     transform: rotate(180deg);
+}
+
+.nav-mobile__container .item-mobile h6{
+    display: none;
 }
