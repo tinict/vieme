@@ -270,31 +270,32 @@
 
 /* css post blog */
 
-.post-blog{
+.post-blog {
     background-color: #ffffff;
     margin: 16px 0 16px 0;
     padding: 8px;
     border-radius: var(--mainCenter__boderBox);
+    color: var(--hint-color);
 }
 
-.btn-post{
+.btn-post {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-.btn-post .avatar{
+.btn-post .avatar {
     height: 40px;
     border-radius: 20px;
     margin-right: 10px;
 }
 
-.btn-post .avatar img{
+.btn-post .avatar img {
     width: 100%;
     height: 100%;
 }
 
-.btn-post button{
+.btn-post button {
     background-color: #e8ebed;
     border: 1px solid #1dbfaf;
     border-radius: 20px;
@@ -308,12 +309,12 @@
     margin: 8px 0 0 0;
 }
 
-.btn-app .post-item{
+.btn-app .post-item .around{
     border-radius: 15px;
     text-align: center;
 }
 
-.btn-app .post-item a{
+.btn-app .post-item .around{
     width: 100%;
     display: flex;
     padding: 5px;
@@ -322,13 +323,13 @@
     text-align: center;
 }
 
-.btn-app .post-item h6{
+.btn-app .post-item h6 {
     font-size: 10px;
     margin-top: 4px;
     color: var(--font-color);
 }
 
-.btn-app .post-item a i {
+.btn-app .post-item .around i {
     color: var(--primary-color);
 }
 
@@ -338,7 +339,7 @@
 
 /* css container post*/
 
-.itemBox-post{
+.itemBox-post {
     padding: 8px;
     border-radius: var(--mainCenter__boderBox);
     background-color: #ffffff;

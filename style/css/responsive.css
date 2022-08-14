@@ -60,12 +60,12 @@
         color: #65676B;
     }
 
-    .btn-app .post-item a{
+    .btn-app .post-item .around{
         display: block;
         color: #1c7ed6;
     }
 
-    .btn-app .post-item a h6 {
+    .btn-app .post-item .around h6 {
         margin: 0;
         color: #1c7ed6;
     }
@@ -98,13 +98,13 @@
         color: #1c7ed6;
     }
 
-    .post-item a .around {
+    .post-item .around{
         background-color: #f0f1f3;
-        border-radius: 30px;
-        padding: 10px;
+        border-radius: 20px;
+        padding: 5px;
     }
 
-    .post-item a h6 {
+    .post-item .around h6 {
         display: none;
     }
 }
