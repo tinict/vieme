@@ -176,11 +176,9 @@
                                 <h6>Viết Blog</h6>
                             </div>
                             <div class="btn-status post-item">
-                                <a href="">
-                                    <div class="around">
-                                        <i class="fa-solid fa-pen-to-square"></i>
-                                    </div>
-                                </a>
+                                <div class="around">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </div>
                                 <h6>Bài viết</h6>
                             </div>
                             <div class="btn-video post-item">
@@ -210,52 +208,7 @@
                         </div>
                     </div>
                     <div class="container-post">
-                        <div class="itemBox-post">
-                            <div class="header-post">
-                                <div class="left-itemPost">
-                                    <div class="avatar">
-                                        <img src="style/img/nhan-dan-facebook-removebg-preview.png" alt="avatar-user">
-                                    </div>
-                                    <span class="name-user">Test Name</span>
-                                    <span>-</span>
-                                    <span class="time-post">4h</span>
-                                </div>
-                                <div class="right-itemPost">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </div>
-                            </div>
-                            <div class="contents-post">
-                                <p>
-                                    HTML (Viết tắt của từ HyperText Markup Language, hay là "Ngôn ngữ Đánh dấu Siêu văn bản") là một ngôn ngữ đánh dấu được thiết kế ra để 
-                                    tạo nên các trang web trên World Wide Web. Nó có thể được trợ giúp bởi các công nghệ như CSS và các ngôn ngữ kịch bản giống như 
-                                    JavaScript.
-                                </p>
-                            </div>
-                            <div class="img-post">
-                                <img src="style/img/nhan-dan-facebook-removebg-preview.png" alt="">
-                            </div>
-                            <div class="container-icon">
-                                <div class="gr-left">
-                                    <div class="grp-item">
-                                        <i class="fa-solid fa-heart"></i>
-                                        <span>0</span>
-                                    </div>
-                                    <div class="grp-item">
-                                        <i class="fa-solid fa-comment-dots"></i>
-                                        <span>0</span>
-                                    </div>
-                                    <div class="grp-item">
-                                        <i class="fa-solid fa-share"></i>
-                                        <span>0</span>
-                                    </div>
-                                </div>
-                                <div class="gt-right">
-                                    <div class="grp-item">
-                                        <i class="fa-solid fa-bookmark"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -377,7 +330,41 @@
                 </div>
             </div>
         </div>
+        <div class="form-post">
+            <div class="header-form-post">
+                <div class="left-header">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <div class="button-zone-friend">
+                        <i class="fa-solid fa-user-group"></i>
+                        <h5>Mọi người</h5>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="right-header">
+                    <span class="post">Đăng</span>
+                </div>
+            </div> 
+            <section class="write-contents">
+                <p class="form-write-post" contenteditable="true">Bạn đang nghĩ gì?</p>
+                <div class="containers-img"></div>
+            </section>       
+            <div class="footer-form-post">
+                <div class="left-footer">
+                    <i class="fa-solid fa-icons"></i>
+                </div>
+                <div class="right-footer">
+                    <input type="file" id="uploadImage" hidden/>
+                    <label for="uploadImage">
+                        <i class="fa-solid fa-image"></i>
+                    </label>
+                    <i class="fa-solid fa-film"></i>
+                    <i class="fa-solid fa-link"></i>
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+            </div>
+        </div>
     </body>
     <script src= "js/button.js"></script>
     <script src= "js/main.js"></script>
+    <script src="js/PostVieme.js"></script>
 </html>
