@@ -655,3 +655,58 @@
 .form-post {
     display: none;
 }
+
+/* vieme short video */
+
+.short-video {
+    padding: 8px 16px 8px 16px;
+    /* margin-top: 8px;
+    margin-bottom: 8px; */
+}
+
+.containers-shortVideo {
+    display: flex;
+    text-align: center;
+    overflow-x: scroll;
+}
+
+.item-shortVideo {
+    margin-right: 32px;
+}
+
+.item-shortVideo .real i {
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid #1dbfaf;
+    background-color: var(--line-color);
+    color: #ffffff;
+}
+
+.containers-shortVideo .item-shortVideo:first-child .real{
+    border-radius: 0;
+    border: 0;
+}
+
+.item-shortVideo .real {
+    position: relative;
+    padding: 4px;
+    border-radius: 35px;
+    border: 2px solid #00F5FF;
+}
+
+.item-shortVideo p {
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.real .fa-plus {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 4px !important;
+    font-size: 9px;
+    background-color: #1473e6 !important;
+    color: #000 !important;
+    border: 0 !important;
+}
