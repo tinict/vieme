@@ -12,7 +12,7 @@ var formWritePostElement = document.querySelector('.form-write-post');
 var writeContentElement = document.querySelector('.write-contents');
 
 btnStatusElement.addEventListener('click', function() {
-    writeContentElement.innerHTML = `<p class="form-write-post" contenteditable="true">Bạn đang nghĩ gì?</p><img src="style/img/london-eye-800x534.jpg" alt="" id="img-loading" accept = "image/gif, image/png, image/jpeg" onchange="chooseFile(this)">`;
+    writeContentElement.innerHTML = `<p class="form-write-post" contenteditable="true">Bạn đang nghĩ gì?</p><div class="containers-img"></div>`;
     formPostElement.style.display = 'block';
     containerPostElement.style.display = 'none';
     navMobileElement.style.display = 'none ';
@@ -145,6 +145,8 @@ function chooseFile(fileInput) {
 }
 
 document.querySelector('#uploadImage').onchange = function() {
+    // var containersImgElement = document.querySelector(".containers-img");
+    document.querySelector(".containers-img").innerHTML = `<img src="style/img/london-eye-800x534.jpg" alt="" id="img-loading">`;
     chooseFile(this);
 }
 
