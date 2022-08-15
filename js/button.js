@@ -82,4 +82,13 @@ document.querySelector('.fa-th-list').onclick = function() {
     document.querySelector('.fa-th-list').classList.remove('line-hight');
 }
 
+var btnexitElement = document.querySelector('.btn-exit');
+btnexitElement.onclick = function () {
+    document.querySelector('.private-user').style.display = 'none';
+}
+
+document.querySelector('.button-zone-friend').onclick = function () {
+    document.querySelector('.private-user').style.display = 'block';
+}
+
 

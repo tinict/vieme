@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="style/css/toggle.css">
     </head>
     <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <div class="header">
             <div class="header__left">
                 <img class="header__logo" src="style/img/logo-vieme-removebg-preview.png" alt="logo-vieme">
@@ -117,13 +118,13 @@
                         <div class="center__item">
                             <a href="">
                                 <i class="fa-solid fa-newspaper"></i>
-                                <h5>Công nghệ</h5>
+                                <h5>Tin tức</h5>
                             </a>
                         </div>
                         <div class="center__item">
                             <a href="">
                                 <i class="fa-solid fa-microchip"></i>
-                                <h5>Sản phẩm</h5>
+                                <h5>Review</h5>
                             </a>
                         </div>
                         <div class="center__item">
@@ -371,14 +372,16 @@
             </div> 
             <section class="write-contents">
                 <p class="form-write-post" contenteditable="true">Bạn đang nghĩ gì?</p>
-                <div class="containers-img"></div>
+                <div class="containers-img">
+                    <img src="style/img/london-eye-800x534.jpg" alt="" id="img-loading">
+                </div>
             </section>       
             <div class="footer-form-post">
                 <div class="left-footer">
                     <i class="fa-solid fa-icons"></i>
                 </div>
                 <div class="right-footer">
-                    <input type="file" id="uploadImage" hidden/>
+                    <input type="file" id="uploadImage" accept = "image/gif, image/png, image/jpeg" hidden/>
                     <label for="uploadImage">
                         <i class="fa-solid fa-image"></i>
                     </label>
@@ -387,6 +390,71 @@
                     <i class="fa-solid fa-location-dot"></i>
                 </div>
             </div>
+        </div>
+        <div class="bg-private private-user">
+            <div class="sub-menu">
+                <div class="header-private">
+                    <div class="title-private">
+                        <h4>Quyền xem</h4>
+                    </div>
+                    <div class="btn-exit">
+                       <span>Xong</span>
+                    </div>
+                </div>
+                <div class="container-item-check">
+                    <div class="item">
+                        <input type="checkbox">
+                        <i class="fa-solid fa-earth-africa"></i>
+                        <div class="type-check">
+                            <h5>Mọi người</h5>
+                            <span>Tất cả bạn bè của bạn</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox">
+                        <i class="fa-solid fa-users"></i>
+                        <div class="type-check">
+                            <h5>Bạn bè</h5>
+                            <span>Tất cả bạn bè của bạn trên Vieme forums</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox">
+                        <i class="fa-solid fa-lock"></i>
+                        <div class="type-check">
+                            <h5>Chỉ mình tôi</h5>
+                            <span>Tất cả bạn bè của bạn không thấy tin của bạn</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox">
+                        <i class="fa-solid fa-user-check"></i>
+                        <div class="type-check">
+                            <h5>Bạn bè tôi chọn</h5>
+                            <span>Tất cả bạn bè của bạn không thấy tin của bạn</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox">
+                        <i class="fa-solid fa-users"></i>
+                        <div class="type-check">
+                            <h5>Bạn bè tôi nhóm</h5>
+                            <span>Tất cả bạn bè của bạn không thấy tin của bạn</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox">
+                        <i class="fa-solid fa-circle-minus"></i>
+                        <div class="type-check">
+                            <h5>Bạn bè ngoại trừ</h5>
+                            <span>Tất cả bạn bè của bạn không thấy tin của bạn</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>            
         </div>
     </body>
     <script src= "js/button.js"></script>
