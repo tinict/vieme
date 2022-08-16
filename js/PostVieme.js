@@ -67,6 +67,16 @@ function createTimePost() {
 
 console.log(createTimePost());
 
+function getFile(fileInput) {
+    if(fileInput.files && fileInput.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+            $(`#img-loading`).attr(`src`, e.target.result);
+            return e.target.result;
+        }
+    }
+}
 
 postElement.addEventListener('click', function() {
     var textPost = document.querySelector('.form-write-post').textContent;
