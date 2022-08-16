@@ -402,10 +402,11 @@
 
 .gr-left {
     display: flex;
+    justify-content: space-between;
 }
 
 .gr-left .grp-item{
-    margin: 0 16px 0 16px;
+    margin-right: 20px;
 }
 
 .container-post:after {
@@ -836,6 +837,10 @@
     border-radius: 0 !important;
 }
 
+.sticky .center__item::after {
+    display: none !important;
+}
+
 .sticky .center__item {
     padding: 0;
 }
@@ -879,7 +884,7 @@
 
 .posts button {
     font-size: 12px;
-    padding: 6px;
+    padding: 5px;
     border-radius: 10px;
     background-color: var(--color-menu-left);
     border: 0;
@@ -890,4 +895,74 @@
 
 .header-posts {
     margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-posts {
+    position: relative;
+}
+
+.header-posts .header-right button{
+    background-color: #fff;
+    color: #1473e6;
+    border: 2px solid #accef9;
+    border-radius: 5px;
+}
+
+/* sticky header post */
+
+.sticky-headerPost {
+    position: fixed;
+    margin: 0;
+    z-index: 2;
+    width: 100%;
+    top: 40px;
+    padding: 8px 16px 8px 0;
+    background-color: #fff;
+}
+
+.header-posts .header-right button .sub-menu-headerPost {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 28px;
+    width: 120px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.header-right button:hover > .show-sub {
+    display: grid;
+}
+
+.header-right button:hover {
+    background-color: #accef9;
+}
+
+.header-right button .sub-menu-headerPost .item-sub {
+    display: grid !important;
+    grid-template-columns: 30px auto;
+    margin: 4px 0 4px 0;
+    padding: 4px;
+    text-align: start;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.header-right button .sub-menu-headerPost .item-sub:first-child {
+    margin-top: 0;
+}
+
+.header-right button .sub-menu-headerPost .item-sub:last-child {
+    margin-bottom: 0;
+}
+
+.header-right button .sub-menu-headerPost .item-sub i {
+    line-height: 24px;
+    text-align: center;
+}
+
+.header-right button .sub-menu-headerPost .item-sub:hover {
+    background-color: #dbdbdb;
 }
