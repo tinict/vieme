@@ -341,7 +341,7 @@
 /* css container post*/
 
 .itemBox-post {
-    padding: 8px;
+    padding: 8px 0 8px 0;
     border-radius: var(--mainCenter__boderBox);
     background-color: #ffffff;
 }
@@ -388,7 +388,6 @@
 .container-icon {
     padding: 5px;
     border-top: 1px solid #dbdbdb;
-    margin: 0 32px 0 16px;
     color: #1dbfaf;
 }
 
@@ -685,11 +684,12 @@
     display: flex;
     text-align: center;
     overflow-x: scroll;
+    justify-content: space-between;
 }
 
-.item-shortVideo {
+/* .item-shortVideo {
     margin-right: 32px;
-}
+} */
 
 .item-shortVideo .real i {
     margin: 5px;
@@ -701,8 +701,8 @@
 }
 
 .containers-shortVideo .item-shortVideo:first-child .real{
-    border-radius: 0;
-    border: 0;
+    border-radius: 20px;
+    border: 2px solid #fff;
 }
 
 .item-shortVideo .real {
@@ -874,7 +874,7 @@
 
 .posts {
     background-color: #fff;
-    padding: 16px;
+    padding: 16px 8px 16px 8px;
 }
 
 .posts button {
