@@ -65,26 +65,17 @@ function createTimePost() {
     return fullTime;
 }
 
-console.log(createTimePost());
-
-function getFile(fileInput) {
-    if(fileInput.files && fileInput.files[0]) {
-        var reader = new FileReader();
-
-        reader.onload = function(e) {
-            $(`#img-loading`).attr(`src`, e.target.result);
-            return e.target.result;
-        }
-    }
-}
+var tempPostImg = [];
 
 postElement.addEventListener('click', function() {
     var textPost = document.querySelector('.form-write-post').textContent;
     var textAreaElement = document.querySelector('.form-write-post');
     console.log(textAreaElement.textContent, " " , postElements.length);
     console.log(uploadImageElement.values);
-    var createPostUser = new createPost("1","Vieme", textPost,uploadImageElement.value,createTimePost());
+    console.log(tempPostImg[0]);
+    var createPostUser = new createPost("1","Vieme", textPost,tempPostImg[0],createTimePost());
     postElements.push(createPostUser);
+    postElements.reverse();
     var htmls = postElements.map(function(postElement) {
         return `
                         <div class="itemBox-post">
@@ -110,7 +101,7 @@ postElement.addEventListener('click', function() {
                                 <p>${postElement.text}</p>
                             </div>
                             <div class="img-post">
-                                <img src="${postElement.linkImg}" alt="">
+                                <img id="post-img" src="${postElement.linkImg}" alt="">
                             </div>
                             <div class="container-icon">
                                 <div class="gr-left">
@@ -141,6 +132,7 @@ postElement.addEventListener('click', function() {
     formPostElement.style.display = 'none';
     containerPostElement.style.display = 'block';
     navMobileElement.style.display = 'block';
+    postElements.reverse();
 });
 
 function chooseFile(fileInput) {
@@ -149,6 +141,7 @@ function chooseFile(fileInput) {
 
         reader.onload = function(e) {
             $(`#img-loading`).attr(`src`, e.target.result);
+            tempPostImg[0] = e.target.result;
         }
         reader.readAsDataURL(fileInput.files[0]);
     }
@@ -156,7 +149,7 @@ function chooseFile(fileInput) {
 
 document.querySelector('#uploadImage').onchange = function() {
     // var containersImgElement = document.querySelector(".containers-img");
-    document.querySelector(".containers-img").innerHTML = `<img src="style/img/london-eye-800x534.jpg" alt="" id="img-loading">`;
+    document.querySelector(".containers-img").innerHTML = `<img src="" alt="" id="img-loading">`;
     chooseFile(this);
 }
 

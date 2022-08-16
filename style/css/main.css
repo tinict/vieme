@@ -389,6 +389,7 @@
     padding: 5px;
     border-top: 1px solid #dbdbdb;
     margin: 0 32px 0 16px;
+    color: #1dbfaf;
 }
 
 .grp-item{
@@ -867,4 +868,26 @@
 
 .logo-center-hint {
     display: none;
+}
+
+/* css posts header*/
+
+.posts {
+    background-color: #fff;
+    padding: 16px;
+}
+
+.posts button {
+    font-size: 12px;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: var(--color-menu-left);
+    border: 0;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.header-posts {
+    margin-bottom: 16px;
 }
