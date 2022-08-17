@@ -91,4 +91,17 @@ document.querySelector('.button-zone-friend').onclick = function () {
     document.querySelector('.private-user').style.display = 'block';
 }
 
+document.querySelector('.post-plus').onclick = function () {
+    // <i class="fa-solid fa-xmark"></i>
+    document.querySelector('.post-plus').style.display = 'none';
+    document.querySelector('.fa-xmark').style.display = 'block';
+    //document.querySelector('.sub-menu-plus').style.display = 'block';
+}
 
+
+document.querySelector('.fa-xmark').onclick = function () {
+    // <i class="fa-solid fa-xmark"></i>
+    document.querySelector('.fa-xmark').style.display = 'none';
+    document.querySelector('.post-plus').style.display = 'block';
+    document.querySelector('.sub-menu-plus').style.display = 'none';
+}

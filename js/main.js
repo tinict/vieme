@@ -2,6 +2,7 @@
 window.onscroll = function() {
     myfunction();
     stickyHeaderPost();
+    HintShowFooter();
 }
 
 var navbar = document.querySelector('.main__center-navbar')
@@ -29,6 +30,20 @@ function stickyHeaderPost() {
     else {
         headerPosts.classList.remove("sticky-headerPost");
     }
+}
+
+var navMobileElement = document.querySelector('.nav-mobile');
+var TempScrollbar = 0;
+
+function HintShowFooter() {
+    if(TempScrollbar < window.pageYOffset) {
+        navMobileElement.style.display = 'none';
+    }
+    else if(TempScrollbar >= window.pageYOffset){
+        navMobileElement.style.display = 'block';
+    }
+    TempScrollbar = window.pageYOffset;
+    console.log(TempScrollbar);
 }
 
 
